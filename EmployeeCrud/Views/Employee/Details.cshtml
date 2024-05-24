@@ -1,0 +1,32 @@
+﻿@model Employee
+
+
+<div>
+    <p>Employee Details</p>
+</div>
+<div>
+    <a asp-controller="Employee" asp-action="Index">Back To Employee List</a>
+</div>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Firstname</th>
+            <th scope="col">Lastname</th>
+            <th scope="col">Address</th>
+            <th scope="col">Departmen</th>
+        </tr>
+    </thead>
+    <tbody>
+       
+            <tr>
+            <th scope="row">@Model.EmployeeId</th>
+                <td>@Model.Firstname</td>
+                <td>@Model.Lastname</td>
+                <td>@Model.Address</td>
+                <td>@Model.Deparment</td>
+              
+            </tr>
+        
+    </tbody>
+</table>
